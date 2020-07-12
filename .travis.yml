@@ -12,6 +12,6 @@ before_deploy:
 
 deploy:
   provider: script
-  script: docker push basile/node
+  script: docker push harym/node
   on:
     branch : master
