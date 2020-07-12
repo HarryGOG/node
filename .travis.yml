@@ -7,7 +7,7 @@ script:
   - docker images harym/node
 
 before_deploy:
-  - docker login -u harym -p Basile123
+  - docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
 
 
 deploy:
