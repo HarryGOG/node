@@ -5,3 +5,13 @@ services:
 script:
   - docker build -t basile/node .
   - docker images basile/node
+
+before_deploy:
+  - docker login -u harym -p Basile123
+
+
+deploy:
+  provider: script
+  script: docker push basile/node
+  on:
+    branch : master
