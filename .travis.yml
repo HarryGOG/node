@@ -3,8 +3,8 @@ services:
   - docker
 
 script:
-  - docker build -t basile/node .
-  - docker images basile/node
+  - docker build -t harym/node .
+  - docker images harym/node
 
 before_deploy:
   - docker login -u harym -p Basile123
